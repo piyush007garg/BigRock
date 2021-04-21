@@ -6,19 +6,18 @@ import java.util.*;
 
 public class MaximumAreaHistogram {
 
-    public static void main(String[] args) {
-        Integer[] integers = {6,2,5,4,5,1,6};
-        int size =6;
-//        System.out.println(Arrays.toString(MAH(integers, size)));
-        System.out.println(MAH(integers,size));
-    }
-    
+
     // find Index of nearest smaller to left
     // find Index of nearest smaller to right
     // Resulted Array =(NSL Index - NSR Index) -1
     // Given Array Value * Resulted Array value
     // Now pick the Highest value
-    
+
+    public static void main(String[] args) {
+        Integer[] integers = {6,2,5,4,5,1,6};
+        int size =6;
+        System.out.println(MAH(integers,size));
+    }
     
     public static List<Integer> NSR(Integer[] nsrArray,int size){
         Stack<Pair<Integer,Integer>> stack = new Stack<Pair<Integer, Integer>>();
